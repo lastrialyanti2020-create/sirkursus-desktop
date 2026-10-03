@@ -59,24 +59,24 @@ public class FormPendaftaranAwal extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(900, 600));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel4.setText("Nama");
         jLabel4.setMaximumSize(new java.awt.Dimension(155, 14));
         jLabel4.setMinimumSize(new java.awt.Dimension(155, 14));
 
         txtNama.setDisabledTextColor(new java.awt.Color(204, 204, 204));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel5.setText("Biaya");
         jLabel5.setMaximumSize(new java.awt.Dimension(155, 14));
         jLabel5.setMinimumSize(new java.awt.Dimension(155, 14));
 
-        jLabel6.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel6.setText("Jumlah");
         jLabel6.setMaximumSize(new java.awt.Dimension(155, 14));
         jLabel6.setMinimumSize(new java.awt.Dimension(155, 14));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel7.setText("Pilih Kursus");
         jLabel7.setMaximumSize(new java.awt.Dimension(155, 14));
         jLabel7.setMinimumSize(new java.awt.Dimension(155, 14));
@@ -118,14 +118,15 @@ public class FormPendaftaranAwal extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel8.setText("Diskon");
         jLabel8.setMaximumSize(new java.awt.Dimension(155, 14));
         jLabel8.setMinimumSize(new java.awt.Dimension(155, 14));
 
-        jPanel2.setBackground(new java.awt.Color(153, 153, 255));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 204));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("FROM PENDAFTARAN");
         jLabel1.setMaximumSize(new java.awt.Dimension(155, 14));
         jLabel1.setMinimumSize(new java.awt.Dimension(155, 14));
@@ -135,16 +136,16 @@ public class FormPendaftaranAwal extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(351, 351, 351)
+                .addGap(249, 249, 249)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -183,7 +184,7 @@ public class FormPendaftaranAwal extends javax.swing.JFrame {
                             .addComponent(txtDiskon)
                             .addComponent(txtBiaya)
                             .addComponent(txtNama))))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,7 +216,7 @@ public class FormPendaftaranAwal extends javax.swing.JFrame {
                     .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -268,7 +269,7 @@ public class FormPendaftaranAwal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void btnProsesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProsesActionPerformed
-    // 1. AMBIL DATA INPUTAN DARI FORM
+    //AMBIL DATA INPUTAN DARI FORM
     String namaPendaftar = txtNama.getText().trim();
     String kursusPilihan = cmbKursus.getSelectedItem().toString();
     

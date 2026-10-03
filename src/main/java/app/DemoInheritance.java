@@ -10,7 +10,7 @@ public class DemoInheritance {
         ArrayList<Orang> daftarOrang = new ArrayList<>();
 
         // Memasukkan 3 Peserta ke dalam list (menggunakan datamu sebagai salah satu object)
-        daftarOrang.add(new Peserta(1, "Abdul Reyhan Syaidina", "081234567890", "2924020", "Informatika"));
+        daftarOrang.add(new Peserta(1, "Orang", "081234567890", "2924000", "Informatika"));
         daftarOrang.add(new Peserta(2, "Rafi Akbar", "081298765432", "252002", "Informatika"));
         daftarOrang.add(new Peserta(3, "Alya Rahma", "081234567891", "252001", "Informatika"));
 
@@ -27,7 +27,7 @@ public class DemoInheritance {
         System.out.println("\n=== UJI PERUBAHAN DATA (SETTER PARENT) ===");
         // Mengubah nama object pertama menggunakan setter dari class Orang
         Orang orangPertama = daftarOrang.get(0);
-        orangPertama.setNama("Abdul Reyhan S. (Updated)");
+        orangPertama.setNama("Orang. (Updated)");
         
         // Membuktikan bahwa field parent tetap dapat diubah melalui method parent
         System.out.println(orangPertama.getInfo());
