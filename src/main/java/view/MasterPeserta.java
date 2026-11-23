@@ -86,7 +86,7 @@ public class MasterPeserta extends JFrame {
     }
 
     private void initComponents() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setTitle("Master Data Peserta - SIKURSUS Desktop");
 
         // Panel Container Utama
@@ -226,6 +226,20 @@ public class MasterPeserta extends JFrame {
         tblPeserta.setSelectionBackground(new Color(255, 205, 210)); 
         tblPeserta.setSelectionForeground(Color.BLACK);
         
+        // Popup Menu Master Peserta
+javax.swing.JPopupMenu popupMenu = new javax.swing.JPopupMenu();
+
+javax.swing.JMenuItem menuUbah =
+        new javax.swing.JMenuItem("Ubah Data");
+
+javax.swing.JMenuItem menuHapus =
+        new javax.swing.JMenuItem("Hapus Data");
+
+popupMenu.add(menuUbah);
+popupMenu.add(menuHapus);
+
+tblPeserta.setComponentPopupMenu(popupMenu);
+        
         JScrollPane scrollTable = new JScrollPane(tblPeserta);
         scrollTable.setPreferredSize(new Dimension(720, 210));
 
@@ -248,9 +262,7 @@ public class MasterPeserta extends JFrame {
         btnHapus.addActionListener(e -> btnHapusActionPerformed());
         btnReset.addActionListener(e -> btnResetActionPerformed());
         btnCari.addActionListener(e -> btnCariActionPerformed());
-        btnCetak.addActionListener(e -> JOptionPane.showMessageDialog(this, 
-                "Modul Laporan (JasperReports) akan diaktifkan pada Pertemuan 11/12.", 
-                "Informasi", JOptionPane.INFORMATION_MESSAGE));
+        btnCetak.addActionListener(e -> report.ReportService.tampilkanLaporanPeserta());
 
         // Event Klik Baris Tabel
         tblPeserta.addMouseListener(new MouseAdapter() {
