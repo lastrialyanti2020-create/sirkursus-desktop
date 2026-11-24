@@ -1,3 +1,14 @@
 target/
 nbproject/private/
 *.class
+*.class
+*.war
+*.ear
+.idea/
+*.iml
+.vscode/
+nbproject/private/
+build/
+dist/
+.DS_Store
+Thumbs.db
